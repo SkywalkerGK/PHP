@@ -1,9 +1,19 @@
 <?php
-//Quiz 1 จงแสดงผล "2 เท่าของ ... เท่ากับ ..." โดยใช้ตัวแปรแทรกไปแทน ...
-$x = 5;
-$answer = 2 * $x;
-$text = "2 เท่าของ $x เท่ากับ $answer";
-echo $text;
-echo "<p>หรือ</p>";
-echo "2 เท่าของ $x เท่ากับ $answer";
+//If - Else
+
+$temp = -50;
+
+if ($temp >= 30 ) {
+    echo "ร้อน";
+}
+elseif ($temp >= 20){
+    echo "สบายตัวดี";
+}
+elseif ($temp >= 10){
+    echo "หนาว";
+}
+else {
+    echo "หนาวเกินไปแล้ว";
+}
+
 ?>
