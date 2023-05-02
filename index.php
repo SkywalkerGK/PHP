@@ -1,19 +1,12 @@
 <?php
-//If - Else
-
-$temp = -50;
-
-if ($temp >= 30 ) {
-    echo "ร้อน";
-}
-elseif ($temp >= 20){
-    echo "สบายตัวดี";
-}
-elseif ($temp >= 10){
-    echo "หนาว";
-}
-else {
-    echo "หนาวเกินไปแล้ว";
-}
-
+//If - Else 2
+$temp = 15;
 ?>
+
+<?php if ($temp >= 30): ?>
+    <h2>ร้อนมาก</h2>
+<?php elseif ($temp >= 20): ?>
+    <h2>สบายตัว</h2>
+<?php else : ?>
+    <h2>หนาวเกินไป</h2>    
+<?php endif; ?>
