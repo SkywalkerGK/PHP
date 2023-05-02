@@ -1,6 +1,9 @@
 <?php
-$grade = 5;
-echo $grade;
+//Quiz 1 จงแสดงผล "2 เท่าของ ... เท่ากับ ..." โดยใช้ตัวแปรแทรกไปแทน ...
+$x = 5;
+$answer = 2 * $x;
+$text = "2 เท่าของ $x เท่ากับ $answer";
+echo $text;
+echo "<p>หรือ</p>";
+echo "2 เท่าของ $x เท่ากับ $answer";
 ?>
-
-<footer>ฟู้ดเดอร์</footer>
