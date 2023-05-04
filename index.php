@@ -1,9 +1,9 @@
 <?php
 //http://localhost:8255/colorful09af/index.php
-for ($i = 12;$i <= 24 ;$i++){
-    if ($i%10 == 0) {
-        break;
-    }
-    echo "<p>$i</p>";
-}
 ?>
+
+<?php for($i=10;$i<=100;$i+=10):?>
+
+    <h1><?php echo $i ?></h1>
+
+<?php endfor ?>
