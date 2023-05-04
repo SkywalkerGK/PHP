@@ -3,10 +3,7 @@
 ?>
 
 <?php 
-function total_price($number,$price) {
-    $total = $number * $price; 
-    return $total;
-}
+require ("helper/functions.php");
 
 $number1 = 5;
 $price1 = 10;
