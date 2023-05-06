@@ -5,9 +5,14 @@
 <?php 
 //require ("helper/header.php");
 
-$foods = ["ข้าวผัด","ส้มตำ","แกงกะหรี่"];
+$foods = [
+    "title" => "อาหารแมวน้อย",
+    "price" => 229
+];
 
-echo "<p>$foods[0]</p>";
-echo count($foods);
+$food_price = $foods["price"];
+
+echo "<p>$foods[title]</p>";
+echo "<h2>$food_price</h2>";
 
 ?>
