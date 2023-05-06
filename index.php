@@ -3,8 +3,11 @@
 ?>
 
 <?php 
-require ("helper/header.php");
-echo "<p>หน้าแรก</p>";
+//require ("helper/header.php");
 
+$foods = ["ข้าวผัด","ส้มตำ","แกงกะหรี่"];
+
+echo "<p>$foods[0]</p>";
+echo count($foods);
 
 ?>
