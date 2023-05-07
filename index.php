@@ -14,10 +14,23 @@ require("helpers/db.php");
 <body>
     <div>
         <?php
-            $sql = "SELECT * FROM color";
+            //var_dump($_GET["search"]); 
+             
+            $sql = "SELECT * FROM color ";
+            if (isset($_GET["search"])) {
+                $search = $_GET["search"];
+                $sql .= "WHERE title LIKE '%$search%' ";
+            }
+            $sql .= "ORDER BY id DESC";
             $result = mysqli_query($connection,$sql);
             $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
         ?>
+        <form>
+            <p>
+                <input type="search" name="search">
+                <button type="submit">ค้นหา</button>
+            </p>
+        </form>
         <h3>พบสี <?php echo count($rows); ?> รายการ</h3>
         <?php foreach ($rows as $row): ?>
             <div>
